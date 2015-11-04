@@ -10,3 +10,8 @@ print(np.eye(8))
 x1 = np.random.randint(10, size=(5, 4))
 print(x1)
 print(x1[:2, :3])
+x1_sub_copy = x1[:2, :3].copy()
+print(x1_sub_copy)
+x1_sub_copy[0, 0] = 0
+print(x1_sub_copy)
+print(x1)
